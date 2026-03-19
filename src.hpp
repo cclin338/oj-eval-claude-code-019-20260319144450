@@ -10,7 +10,7 @@ void Calculate(std::vector<Matrix *> keys, std::vector<Matrix *> values,
   for (size_t i = 0; i < keys.size(); ++i) {
     auto current_query = rater.GetNextQuery();
 
-    // Just commit the query directly - we know this works
+    // Current baseline - just return Q
     rater.CommitAnswer(*current_query);
   }
 }
